@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "module": "commonjs", // 指定编译生成哪个模块的系统代码，考虑到兼容性，这里我们设置成 commonjs 
-    "moduleResolution": "node", // 决定如何处理模块。设置为 node
+    "module": "ES6",
+    "moduleResolution": "node",
     "target": "es6",
     "outDir": "./dist",
     "baseUrl": "./src",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
   },
   "include": [
     "src/**/*"
